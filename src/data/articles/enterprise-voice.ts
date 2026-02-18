@@ -143,7 +143,7 @@ The enterprise voice architect's role is expanding from network engineer to plat
     date: '2026-01-25',
     readTime: '10 min read',
     heroImage:
-      'https://images.unsplash.com/photo-1655720828018-edd71de7f6ff?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&w=1200&q=80',
     content: `## Two Platforms, One Ecosystem
 
 Microsoft's communications story is told through two platforms that serve fundamentally different audiences but share deep infrastructure:

@@ -428,7 +428,7 @@ For mid-to-large enterprises that want a full-featured, AI-native CCaaS platform
     date: '2026-01-05',
     readTime: '8 min read',
     heroImage:
-      'https://images.unsplash.com/photo-1563986768609-322da13575f2?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80',
     content: `## NICE CXone: Platform Foundations
 
 NICE has been in the contact center business since 1986, long before anyone uttered the phrase "cloud-native." The CXone platform represents NICE's bet-the-company move to the cloud, consolidating their historically separate products -- inContact (CCaaS), Nexidia (analytics), IEX (workforce management), and Actimize (compliance) -- into a unified cloud platform.
