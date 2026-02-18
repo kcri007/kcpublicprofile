@@ -91,7 +91,7 @@ export default function Services() {
           Interested in working together?
         </p>
         <Button asChild>
-          <a href="mailto:Kevin.curtin@cloudevolve.us">Get in Touch</a>
+          <a href="mailto:kevin@cloudevolve.ai">Get in Touch</a>
         </Button>
       </motion.div>
     </Section>

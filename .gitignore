@@ -8,3 +8,5 @@ dist
 .claude/
 *.docx
 supabase/.temp/
+
+.vercel

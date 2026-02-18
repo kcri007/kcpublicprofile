@@ -5,7 +5,7 @@ export const resumeData: ResumeData = {
     name: 'Kevin Curtin',
     title: 'Voice AI Architect & Enterprise Telephony Specialist',
     location: 'East Greenwich, RI 02818',
-    email: 'Kevin.curtin@cloudevolve.us',
+    email: 'kevin@cloudevolve.ai',
     phone: '401-626-2256',
   },
 

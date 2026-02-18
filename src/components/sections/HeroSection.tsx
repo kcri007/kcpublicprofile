@@ -23,14 +23,14 @@ export function HeroSection() {
       <div className="container mx-auto max-w-5xl">
         <div className="flex flex-col items-center text-center">
           {/* Profile initials */}
-          <motion.div
+          <motion.img
+            src="/CloudEvolve_ai_logo2.png"
+            alt="CloudEvolve AI"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.4 }}
-            className="w-20 h-20 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center mb-8"
-          >
-            <span className="text-2xl font-bold text-white">KC</span>
-          </motion.div>
+            className="w-20 h-20 rounded-2xl object-contain mb-8"
+          />
 
           <motion.h1
             initial={{ opacity: 0, y: 16 }}
