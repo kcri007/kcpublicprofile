@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Rss } from 'lucide-react';
 import { Section } from '@/components/layout/Section';
 import { ArticleCard } from '@/components/newsletter/ArticleCard';
-import { allArticles } from '@/data/articles';
+import { useArticles } from '@/hooks/useArticles';
 import type { ArticleCategory } from '@/types/article';
 
 const categories: { key: ArticleCategory | 'all'; label: string }[] = [
@@ -15,12 +15,13 @@ const categories: { key: ArticleCategory | 'all'; label: string }[] = [
 ];
 
 export default function Newsletter() {
+  const { articles } = useArticles();
   const [activeCategory, setActiveCategory] = useState<ArticleCategory | 'all'>('all');
 
   const filtered =
     activeCategory === 'all'
-      ? allArticles
-      : allArticles.filter((a) => a.category === activeCategory);
+      ? articles
+      : articles.filter((a) => a.category === activeCategory);
 
   return (
     <div className="min-h-screen pt-8">

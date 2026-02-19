@@ -2,9 +2,10 @@ import { useParams, Link, Navigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import ReactMarkdown from 'react-markdown';
-import { ArrowLeft, Clock, ExternalLink } from 'lucide-react';
+import { ArrowLeft, Clock, ExternalLink, Loader2 } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
-import { allArticles } from '@/data/articles';
+import { useArticle } from '@/hooks/useArticle';
+import { useArticles } from '@/hooks/useArticles';
 import { ArticleCard } from '@/components/newsletter/ArticleCard';
 
 const categoryColors: Record<string, string> = {
@@ -16,15 +17,24 @@ const categoryColors: Record<string, string> = {
 
 export default function Article() {
   const { id } = useParams<{ id: string }>();
-  const article = allArticles.find((a) => a.id === id);
+  const { article, loading } = useArticle(id);
+  const { articles } = useArticles();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [id]);
 
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <Loader2 className="h-8 w-8 text-cyan-500 animate-spin" />
+      </div>
+    );
+  }
+
   if (!article) return <Navigate to="/newsletter" replace />;
 
-  const relatedArticles = allArticles
+  const relatedArticles = articles
     .filter((a) => a.category === article.category && a.id !== article.id)
     .slice(0, 3);
 
