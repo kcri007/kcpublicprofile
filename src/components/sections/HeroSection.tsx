@@ -28,8 +28,9 @@ export function HeroSection() {
             alt="Kevin Curtin"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.4 }}
-            className="w-24 h-24 rounded-full object-cover mb-8"
+            whileHover={{ scale: 1.5 }}
+            transition={{ duration: 0.3 }}
+            className="w-24 h-24 rounded-full object-cover mb-8 cursor-pointer"
           />
 
           <motion.h1
