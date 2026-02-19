@@ -25,7 +25,7 @@ export function Footer() {
               GitHub
             </a>
             <a
-              href="https://kevincurtin.substack.com"
+              href="https://kevincloudevolveai.substack.com"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-500 hover:text-white transition-colors text-sm"

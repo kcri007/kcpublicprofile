@@ -11,27 +11,27 @@ interface SubstackPost {
   thumbnail?: string;
 }
 
-const SUBSTACK_RSS_URL = 'https://kevincurtin.substack.com/feed';
+const SUBSTACK_RSS_URL = 'https://kevincloudevolveai.substack.com/feed';
 
 // Fallback posts shown when RSS is unavailable
 const fallbackPosts: SubstackPost[] = [
   {
     title: 'The Rise of Voice AI Agents in Enterprise',
-    link: 'https://kevincurtin.substack.com',
+    link: 'https://kevincloudevolveai.substack.com',
     pubDate: new Date().toISOString(),
     description:
       'How Voice AI agents are transforming enterprise telephony — from basic IVR to intelligent, context-aware conversations powered by LLMs.',
   },
   {
     title: 'Building Production Voice AI: Lessons from the Field',
-    link: 'https://kevincurtin.substack.com',
+    link: 'https://kevincloudevolveai.substack.com',
     pubDate: new Date().toISOString(),
     description:
       'Key architectural decisions and hard-won lessons from deploying Voice AI agents at enterprise scale with Bland.ai, Vapi.ai, and custom solutions.',
   },
   {
     title: 'AI Governance for Voice: Safety, Compliance & Trust',
-    link: 'https://kevincurtin.substack.com',
+    link: 'https://kevincloudevolveai.substack.com',
     pubDate: new Date().toISOString(),
     description:
       'Implementing guardrails, PII redaction, and compliance monitoring for production voice AI systems. A practical guide for enterprise teams.',

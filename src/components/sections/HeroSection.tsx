@@ -24,12 +24,12 @@ export function HeroSection() {
         <div className="flex flex-col items-center text-center">
           {/* Profile initials */}
           <motion.img
-            src="/CloudEvolve_ai_logo2.png"
-            alt="CloudEvolve AI"
+            src="/Kevin_Headshot.png"
+            alt="Kevin Curtin"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.4 }}
-            className="w-20 h-20 rounded-2xl object-contain mb-8"
+            className="w-24 h-24 rounded-full object-cover mb-8"
           />
 
           <motion.h1
@@ -74,7 +74,7 @@ export function HeroSection() {
               Check Role Fit
             </Button>
             <Button variant="secondary" asChild>
-              <a href="https://kevincurtin.substack.com" target="_blank" rel="noopener noreferrer" className="gap-2">
+              <a href="https://kevincloudevolveai.substack.com" target="_blank" rel="noopener noreferrer" className="gap-2">
                 <BookOpen className="h-4 w-4" />
                 Newsletter
               </a>
