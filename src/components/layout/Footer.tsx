@@ -9,7 +9,7 @@ export function Footer() {
 
           <div className="flex items-center gap-6">
             <a
-              href="https://linkedin.com/in/kevincurtin"
+              href="https://www.linkedin.com/in/kevin-curtin-509990344"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-500 hover:text-white transition-colors text-sm"

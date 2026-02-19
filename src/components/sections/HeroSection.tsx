@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { MessageSquare, ClipboardPaste, BookOpen, Briefcase, Globe, Award } from 'lucide-react';
+import { MessageSquare, ClipboardPaste, BookOpen, Briefcase, Globe, Award, Download, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { resumeData } from '@/data/resume';
 
@@ -77,6 +77,18 @@ export function HeroSection() {
               <a href="https://kevincurtin.substack.com" target="_blank" rel="noopener noreferrer" className="gap-2">
                 <BookOpen className="h-4 w-4" />
                 Newsletter
+              </a>
+            </Button>
+            <Button variant="secondary" asChild>
+              <a href="/KevinCurtinResume_2026.pdf" download className="gap-2">
+                <Download className="h-4 w-4" />
+                Resume
+              </a>
+            </Button>
+            <Button variant="secondary" asChild>
+              <a href="https://www.linkedin.com/in/kevin-curtin-509990344" target="_blank" rel="noopener noreferrer" className="gap-2">
+                <Linkedin className="h-4 w-4" />
+                LinkedIn
               </a>
             </Button>
           </motion.div>
