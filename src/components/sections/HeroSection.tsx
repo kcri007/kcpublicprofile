@@ -21,7 +21,7 @@ export function HeroSection() {
   return (
     <section className="relative pt-16 pb-20 md:pt-24 md:pb-28 px-4 overflow-hidden">
       {/* Hero background */}
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 z-0">
         <img
           src="/hero-bg.jpg"
           alt=""
@@ -29,7 +29,7 @@ export function HeroSection() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-navy-950/40 via-navy-950/80 to-navy-950" />
       </div>
-      <div className="container mx-auto max-w-5xl">
+      <div className="relative z-10 container mx-auto max-w-5xl">
         <div className="flex flex-col items-center text-center">
           {/* Profile initials */}
           <motion.img
