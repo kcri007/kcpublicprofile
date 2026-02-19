@@ -1,46 +1,46 @@
 import { motion } from 'framer-motion';
-import { Phone, Bot, Shield, Workflow, Cloud, Users } from 'lucide-react';
+import { AudioLines, BrainCircuit, ShieldCheck, GitBranchPlus, CloudCog, UsersRound } from 'lucide-react';
 import { Section } from '@/components/layout/Section';
 import { Button } from '@/components/ui/button';
 
 const services = [
   {
-    icon: Phone,
+    icon: AudioLines,
     title: 'Voice AI Architecture',
     description:
       'Design and deploy production Voice AI agents using Bland.ai, Vapi.ai, Synthflow.ai, and Pipecat. End-to-end architecture from PSTN integration to LLM orchestration.',
     features: ['PSTN/WebRTC Integration', 'LLM Orchestration', 'Real-time Speech Processing', 'Multi-platform Deployment'],
   },
   {
-    icon: Bot,
+    icon: BrainCircuit,
     title: 'Conversational AI Development',
     description:
       'Build intelligent conversational agents with context management, sentiment analysis, and natural language understanding using GPT-4, Claude, and Gemini.',
     features: ['Multi-turn Dialogue', 'Context Management', 'Sentiment Analysis', 'Intent Recognition'],
   },
   {
-    icon: Cloud,
+    icon: CloudCog,
     title: 'Enterprise Teams & Telephony',
     description:
       'Microsoft Teams Phone System deployments, Direct Routing, SBC configuration, and migration from legacy PBX systems. Proven at 65-country global scale.',
     features: ['Teams Phone System', 'Direct Routing & SBCs', 'E911 & Compliance', 'Global Rollouts'],
   },
   {
-    icon: Workflow,
+    icon: GitBranchPlus,
     title: 'Automation & Integration',
     description:
       'Build advanced automation pipelines connecting Voice AI with CRM, ticketing, and collaboration platforms using n8n, Make, Zapier, and native cloud services.',
     features: ['n8n / Make / Zapier', 'Salesforce & Dynamics 365', 'ServiceNow Integration', 'Custom API Pipelines'],
   },
   {
-    icon: Shield,
+    icon: ShieldCheck,
     title: 'AI Governance & Safety',
     description:
       'Implement responsible AI frameworks including guardrails, PII redaction, compliance monitoring, and evaluation frameworks for production voice AI.',
     features: ['Guardrails & Content Filtering', 'PII Detection & Redaction', 'GDPR/CCPA Compliance', 'Quality Assurance'],
   },
   {
-    icon: Users,
+    icon: UsersRound,
     title: 'Strategic Consulting',
     description:
       'Executive-level advisory on Voice AI strategy, platform selection, vendor evaluation, and roadmap planning. 20+ years of enterprise telephony expertise.',

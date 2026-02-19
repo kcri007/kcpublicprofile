@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion';
-import { MessageSquare, ClipboardPaste, BookOpen, Briefcase, Globe, Award, Download, Linkedin } from 'lucide-react';
+import { MessageSquare, ClipboardPaste, BookOpen, BriefcaseBusiness, Earth, Trophy, Download, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { resumeData } from '@/data/resume';
 
 export function HeroSection() {
   const stats = [
-    { icon: Briefcase, label: 'Years Experience', value: '20+' },
-    { icon: Globe, label: 'Country Deployment', value: '65' },
-    { icon: Award, label: 'Enterprise Projects', value: '100+' },
+    { icon: BriefcaseBusiness, label: 'Years Experience', value: '20+' },
+    { icon: Earth, label: 'Country Deployment', value: '65' },
+    { icon: Trophy, label: 'Enterprise Projects', value: '100+' },
   ];
 
   const openChat = () => {
@@ -19,7 +19,16 @@ export function HeroSection() {
   };
 
   return (
-    <section className="relative pt-16 pb-20 md:pt-24 md:pb-28 px-4">
+    <section className="relative pt-16 pb-20 md:pt-24 md:pb-28 px-4 overflow-hidden">
+      {/* Hero background */}
+      <div className="absolute inset-0 -z-10">
+        <img
+          src="/hero-bg.jpg"
+          alt=""
+          className="w-full h-full object-cover opacity-30"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-navy-950/40 via-navy-950/80 to-navy-950" />
+      </div>
       <div className="container mx-auto max-w-5xl">
         <div className="flex flex-col items-center text-center">
           {/* Profile initials */}
@@ -68,7 +77,7 @@ export function HeroSection() {
           >
             <Button onClick={openChat} className="gap-2">
               <MessageSquare className="h-4 w-4" />
-              Ask AI About Me
+              Ask AI About Kevin
             </Button>
             <Button onClick={openJobSpec} variant="secondary" className="gap-2">
               <ClipboardPaste className="h-4 w-4" />

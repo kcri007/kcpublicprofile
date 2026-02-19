@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { GraduationCap, Award } from 'lucide-react';
+import { GraduationCap, BadgeCheck } from 'lucide-react';
 import { Section } from '@/components/layout/Section';
 import { resumeData } from '@/data/resume';
 
@@ -21,7 +21,7 @@ export function EducationSection() {
             className="rounded-xl border border-white/5 bg-white/[0.02] p-5"
           >
             <div className="w-9 h-9 rounded-lg bg-gradient-to-r from-cyan-500/10 to-blue-500/10 flex items-center justify-center mb-4">
-              <Award className="h-4 w-4 text-cyan-400" />
+              <BadgeCheck className="h-4 w-4 text-cyan-400" />
             </div>
             <h3 className="text-sm font-semibold text-white mb-1">{cert.name}</h3>
             <p className="text-sm text-gray-500">{cert.issuer}</p>

@@ -7,7 +7,7 @@ export function ExperienceSection() {
     <Section
       id="experience"
       title="Experience"
-      subtitle="20+ years in enterprise telephony and Voice AI"
+      subtitle="20+ years in enterprise telephony & CCaaS, now architecting the Voice AI frontier"
       className="border-t border-white/5"
     >
       <div className="space-y-6">

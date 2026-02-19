@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
-import { Phone, Globe, Blocks, Shield, Workflow, Bot, Headset } from 'lucide-react';
+import { AudioLines, Earth, BrainCircuit, ShieldCheck, HeadsetIcon, GitBranchPlus } from 'lucide-react';
 import { Section } from '@/components/layout/Section';
 import { Badge } from '@/components/ui/badge';
 import { resumeData } from '@/data/resume';
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
-  Phone, Globe, Blocks, Shield, Workflow, Bot, Headset,
+  AudioLines, Earth, BrainCircuit, ShieldCheck, HeadsetIcon, GitBranchPlus,
 };
 
 export function ProjectsSection() {
@@ -18,7 +18,7 @@ export function ProjectsSection() {
     >
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {resumeData.projects.map((project, index) => {
-          const IconComponent = iconMap[project.icon] || Phone;
+          const IconComponent = iconMap[project.icon] || AudioLines;
           return (
             <motion.div
               key={project.title}

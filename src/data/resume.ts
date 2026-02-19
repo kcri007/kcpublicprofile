@@ -211,42 +211,42 @@ export const resumeData: ResumeData = {
       description:
         'Designed and deployed production-grade Voice AI calling agents across PSTN and Web channels using Bland.ai, Vapi.ai, Synthflow.ai, and Pipecat. These agents handle real-time customer interactions with context management, NLP-driven intent recognition, and seamless handoffs to live agents. Solutions are orchestrated through Vercel, Twilio Flex, Genesys Cloud, and Azure Communication Services for enterprise-scale reliability.',
       tags: ['Bland.ai', 'Vapi.ai', 'Pipecat', 'Twilio', 'LLM'],
-      icon: 'Phone',
+      icon: 'AudioLines',
     },
     {
       title: 'Global Teams Deployment',
       description:
         'Led the architectural design and consulting for a 65-country Microsoft Teams Phone System rollout for a multinational gaming company. The project encompassed Direct Routing with Audiocodes SBCs, E911 compliance, auto-attendants, call queues, and hybrid Teams Rooms integrations across diverse regulatory environments.',
       tags: ['Microsoft Teams', 'Direct Routing', 'Audiocodes', 'E911'],
-      icon: 'Globe',
+      icon: 'Earth',
     },
     {
       title: 'Enterprise AI Integration',
       description:
         'Integrated Voice AI agents with enterprise platforms including Microsoft Teams, Cisco Webex, Slack, Dynamics 365, Salesforce, and ServiceNow. Built cloud-native solutions on Azure, AWS, and GCP that enable real-time telephony integration, automated call routing, data enrichment, and AI-powered orchestration across unified communication ecosystems.',
       tags: ['Salesforce', 'ServiceNow', 'Teams', 'Azure', 'AWS'],
-      icon: 'Bot',
+      icon: 'BrainCircuit',
     },
     {
       title: 'AI Governance Framework',
       description:
         'Established comprehensive governance frameworks for AI voice agents, implementing security controls, compliance monitoring, and safety guardrails. The framework covers PII detection and redaction, content filtering, hallucination mitigation, GDPR/CCPA compliance, and human-in-the-loop validation to ensure responsible and trustworthy AI deployment at enterprise scale.',
       tags: ['Guardrails', 'GDPR', 'PII Redaction', 'Compliance'],
-      icon: 'Shield',
+      icon: 'ShieldCheck',
     },
     {
       title: 'Digital Workers & Contact Center AI',
       description:
         'Architects autonomous AI-powered digital workers that replace legacy IVR systems with natural-language voice agents on enterprise contact center platforms. Deploys across Amazon Connect, Genesys Cloud CX, NICE CXone, Azure Communication Services, and Zoom Contact Center — handling appointment scheduling, order inquiries, troubleshooting, and lead qualification with intelligent escalation to live agents.',
       tags: ['Amazon Connect', 'Genesys', 'NICE CXone', 'Azure ACS', 'Zoom'],
-      icon: 'Headset',
+      icon: 'HeadsetIcon',
     },
     {
       title: 'Automation Pipelines',
       description:
         'Built advanced automation pipelines using n8n, Make, Zapier, and native Azure/AWS/GCP services to orchestrate complex multi-step workflows. These pipelines connect Voice AI agents to CRM systems, ticketing platforms, and analytics dashboards, enabling end-to-end process automation with real-time sentiment analysis, call scoring, and conversation intelligence.',
       tags: ['n8n', 'Make', 'Zapier', 'Azure', 'Workflow'],
-      icon: 'Workflow',
+      icon: 'GitBranchPlus',
     },
   ],
 };

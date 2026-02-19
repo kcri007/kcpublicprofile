@@ -15,19 +15,8 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-navy-950/90 backdrop-blur-md border-b border-white/5">
-      <div className="container mx-auto flex h-14 items-center justify-between px-4 max-w-5xl">
-        <Link to="/" className="flex items-center gap-2 group">
-          <img
-            src="/CloudEvolve_ai_logo2.png"
-            alt="CloudEvolve"
-            className="w-7 h-7 rounded-lg object-contain"
-          />
-          <span className="text-sm font-semibold text-white">
-            Kevin Curtin
-          </span>
-        </Link>
-
-        {/* Desktop nav */}
+      <div className="container mx-auto flex h-14 items-center justify-center px-4 max-w-5xl">
+        {/* Centered nav */}
         <nav className="hidden md:flex items-center gap-1">
           {navItems.map((item) => (
             <Link
@@ -43,6 +32,15 @@ export function Navbar() {
               {item.label}
             </Link>
           ))}
+          <span className="w-px h-4 bg-white/10 mx-1" />
+          <Link to="/" className="flex items-center gap-1.5 px-2 py-1.5">
+            <img
+              src="/CloudEvolve_ai_logo2.png"
+              alt="CloudEvolve AI"
+              className="w-6 h-6 rounded-md object-contain"
+            />
+            <span className="text-sm font-semibold text-white">CloudEvolve AI</span>
+          </Link>
           <span className="w-px h-4 bg-white/10 mx-1" />
           <a
             href="mailto:kevin@cloudevolve.ai"
@@ -62,14 +60,24 @@ export function Navbar() {
           </a>
         </nav>
 
-        {/* Mobile hamburger */}
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden p-2 text-gray-400 hover:text-white"
-          aria-label="Toggle menu"
-        >
-          {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-        </button>
+        {/* Mobile: logo left, hamburger right */}
+        <div className="md:hidden flex items-center justify-between w-full">
+          <Link to="/" className="flex items-center gap-2">
+            <img
+              src="/CloudEvolve_ai_logo2.png"
+              alt="CloudEvolve AI"
+              className="w-7 h-7 rounded-lg object-contain"
+            />
+            <span className="text-sm font-semibold text-white">CloudEvolve AI</span>
+          </Link>
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="p-2 text-gray-400 hover:text-white"
+            aria-label="Toggle menu"
+          >
+            {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile menu */}
