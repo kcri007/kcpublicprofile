@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Mic } from 'lucide-react';
+import { Menu, X, Mail, Linkedin } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const navItems = [
@@ -17,9 +17,11 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full bg-navy-950/90 backdrop-blur-md border-b border-white/5">
       <div className="container mx-auto flex h-14 items-center justify-between px-4 max-w-5xl">
         <Link to="/" className="flex items-center gap-2 group">
-          <div className="w-7 h-7 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center">
-            <Mic className="h-3.5 w-3.5 text-white" />
-          </div>
+          <img
+            src="/CloudEvolve_ai_logo2.png"
+            alt="CloudEvolve"
+            className="w-7 h-7 rounded-lg object-contain"
+          />
           <span className="text-sm font-semibold text-white">
             Kevin Curtin
           </span>
@@ -41,6 +43,23 @@ export function Navbar() {
               {item.label}
             </Link>
           ))}
+          <span className="w-px h-4 bg-white/10 mx-1" />
+          <a
+            href="mailto:kevin@cloudevolve.ai"
+            className="p-1.5 rounded-md text-gray-400 hover:text-white transition-colors"
+            aria-label="Email"
+          >
+            <Mail className="h-4 w-4" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/kevin-curtin-509990344"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-1.5 rounded-md text-gray-400 hover:text-white transition-colors"
+            aria-label="LinkedIn"
+          >
+            <Linkedin className="h-4 w-4" />
+          </a>
         </nav>
 
         {/* Mobile hamburger */}
@@ -72,6 +91,26 @@ export function Navbar() {
                 {item.label}
               </Link>
             ))}
+            <div className="flex items-center gap-2 px-3 pt-2 border-t border-white/5 mt-1">
+              <a
+                href="mailto:kevin@cloudevolve.ai"
+                onClick={() => setIsOpen(false)}
+                className="flex items-center gap-2 py-2 text-sm text-gray-400 hover:text-white transition-colors"
+              >
+                <Mail className="h-4 w-4" />
+                Email
+              </a>
+              <a
+                href="https://www.linkedin.com/in/kevin-curtin-509990344"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsOpen(false)}
+                className="flex items-center gap-2 py-2 text-sm text-gray-400 hover:text-white transition-colors"
+              >
+                <Linkedin className="h-4 w-4" />
+                LinkedIn
+              </a>
+            </div>
           </nav>
         </div>
       )}
