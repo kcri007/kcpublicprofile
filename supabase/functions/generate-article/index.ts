@@ -89,6 +89,10 @@ async function hashTitle(title: string): Promise<string> {
   return hashArray.map((b) => b.toString(16).padStart(2, '0')).join('');
 }
 
+function stripCodeFences(text: string): string {
+  return text.replace(/^```(?:json)?\s*\n?/i, '').replace(/\n?```\s*$/i, '').trim();
+}
+
 function slugify(title: string): string {
   return title
     .toLowerCase()
@@ -187,7 +191,7 @@ Respond with ONLY a JSON object (no markdown, no code fences):
 
     const topicResult = await topicResponse.json();
     const topicText = topicResult.content[0].text.trim();
-    const topic = JSON.parse(topicText);
+    const topic = JSON.parse(stripCodeFences(topicText));
 
     const articleId = slugify(topic.title);
     const todayDate = getTodayDate();
@@ -258,7 +262,7 @@ Include exactly 5 credible sources (documentation sites, research papers, analys
 
     const articleResult = await articleResponse.json();
     const articleText = articleResult.content[0].text.trim();
-    const articleData = JSON.parse(articleText);
+    const articleData = JSON.parse(stripCodeFences(articleText));
 
     // Insert into database
     const heroImage = getHeroImage(category.key, todayDate);
